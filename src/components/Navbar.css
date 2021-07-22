@@ -1,5 +1,5 @@
 .nav-menu {
-  background-color: rgb(201, 143, 248);
+  background-color: #1f1f1f;
   width: 350px;
   height: 100vh;
   position: fixed;
@@ -31,13 +31,16 @@
 }
 .nav-text a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #fff;
   transition: 0.15s ease-in-out;
-
 }
 .nav-text a:hover {
-  color: white;
+  color: rgb(254 66 65);
   transition: 0.15s ease-in-out;
+}
+.nav-text a:active {
+  color: rgb(254 66 65);
+  background-color: white;
 }
 .nav-menu-items {
   width: 100%;

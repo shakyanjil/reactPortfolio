@@ -1,8 +1,10 @@
-import React from 'react';
+import React from "react";
+import Label from "../components/Label";
 
 function Contact() {
   return (
-    <div className='contact'>
+    <div className="row">
+      <Label />
       <h1>Contact</h1>
     </div>
   );

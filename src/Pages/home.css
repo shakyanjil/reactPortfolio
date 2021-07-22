@@ -1,0 +1,37 @@
+
+.col1 {
+  max-width: 50%;
+}
+.col1 img {
+  height: 335px;
+  width: 335px;
+  border-radius: 25px;
+}
+.col2 {
+  max-width: 50%;
+  padding: 25px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 15px 0;
+}
+.col2 h1 {
+  font-size: 48px;
+  font-style: bold;
+}
+.para {
+  margin: 35px 0;
+  font-style: italic;
+  color: rgb(78, 78, 78);
+}
+.socialicons {
+  display: flex;
+}
+.socialicons ul {
+  display: flex;
+  list-style: none;
+}
+.socialicons ul li {
+  font-size: 22px;
+  margin: 8px;
+}
