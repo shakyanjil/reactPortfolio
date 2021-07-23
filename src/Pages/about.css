@@ -1,0 +1,37 @@
+.container {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  margin-left: 350px;
+  min-height: 100vh;
+}
+.banner {
+}
+.banner img {
+  height: 100%;
+  width: 100%;
+}
+h3 {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutme .myself {
+  width: 50%;
+}
+.myself p {
+  padding: 50px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.aboutme .details {
+  width: 50%;
+}
+.details ul {
+  list-style: none;
+}
