@@ -4,7 +4,7 @@ import Label from "../components/Label";
 function Contact() {
   return (
     <div className="row">
-      <Label />
+      <Label title={"Contact"}/>
       <h1>Contact</h1>
     </div>
   );

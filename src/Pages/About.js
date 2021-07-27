@@ -1,31 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import "./about.css";
-import banner from "../images/banner.png";
-
+import Mydetails from "./Mydetails";
+import More from "../components/More";
 function About() {
   return (
     <div className="container">
-      <div className="banner">
-        <img src={banner} alt="banner image" />
-      </div>
+      <div className="banner"></div>
       <div className="aboutme">
         <div className="myself">
           <h3>Anjil shakya</h3>
           <p>
-            This is abvout myself. hello nice to meet you . welcome to my
-            portfolio. i built this using react js.
-          </p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor a
+            nunc ultrices in pharetra, egestas lectus venenatis. Accumsan, est
+            placerat semper lectus urna, eget ised est egestas viverra egestas
+            non. Aliquam egestas lacus egestas porta velit, turSit quam euismod
+            tialiqua.
+          </p>          
         </div>
         <div className="details">
-          <ul>
-            <li>Date of Birth: 21/03/1998 </li>
-            <li>Date of Birth: 21/03/1998 </li>
-            <li>Date of Birth: 21/03/1998 </li>
-            <li>Date of Birth: 21/03/1998 </li>
-            <li>Date of Birth: 21/03/1998 </li>
-          </ul>
+          <div className="title">
+            <ul>
+              {Mydetails.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <span>{item.title}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="field">
+            <ul>
+              {Mydetails.map((item, index) => {
+                return (
+                  <li key={index} className="field-details">
+                    <span>{item.field}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
+
       </div>
+      <div className="more">
+      <More title={"ReadMore"} />
+
+      </div>
+
     </div>
   );
 }

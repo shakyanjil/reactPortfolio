@@ -1,12 +1,14 @@
-import React from "react";
+import React ,{Component} from "react";
 import "./label.css";
-import { SidebarData } from "./SidebarData";
 
-function Label() {
-  return <h4>LABEL</h4>;
-  // SidebarData.map((item, index) => {
-  //   return <h4 key={index}>{item.title}</h4>;
-  // });
+class Label extends Component {
+  render(){
+    return (
+      <h4>{this.props.title}</h4>
+    )
+  }
 }
 
+
 export default Label;
+

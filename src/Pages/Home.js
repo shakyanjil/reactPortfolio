@@ -1,7 +1,8 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import "./home.css";
 import "./pagesetup.css";
-import { FaBeer } from "react-icons/fa";
+import { FaBeer, FaFacebook,FaInstagram,FaGithub,FaLinkedin,FaTwitter } from "react-icons/fa";
 
 function Home() {
   return (
@@ -24,19 +25,19 @@ function Home() {
         <div className="socialicons">
           <ul>
             <li>
-              <FaBeer />
+              <a href="https://www.facebook.com/anjil.shakya.1/" target="_blank"><FaFacebook /></a>
             </li>
             <li>
-              <FaBeer />
+              <a href="https://instagram.com/shakyanjil" target="_blank"><FaInstagram /></a>
             </li>
             <li>
-              <FaBeer />
+              <a href="https://github.com/shakyanjil" target="_blank"><FaGithub /></a>
             </li>
             <li>
-              <FaBeer />
+              <a href="https://linkedin.com" target="_blank"><FaLinkedin /></a>
             </li>
             <li>
-              <FaBeer />
+              <a href="https://twitter.com" target="_blank"><FaTwitter /></a>
             </li>
           </ul>
         </div>

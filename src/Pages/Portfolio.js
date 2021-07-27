@@ -1,10 +1,12 @@
 import React from "react";
+import Label from "../components/Label"
 
 function Portfolio() {
   return (
     <div className="row">
+      
       <h1>Portfolio</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sint eos ullam!</p>
+      <Label title="Portfilio"/>
     </div>
   );
 }
